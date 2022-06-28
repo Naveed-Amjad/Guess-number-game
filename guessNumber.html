@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        #main{
+            height: 100vh;
+            width: 100%;
+            background-color: #00FFFF;
+            position: relative;
+        }
+        #h2{
+            text-align: center;
+            padding: 20px;
+        }
+        #guess{
+            height: 60px;
+            width: 100px;
+            border: 1px solid blue;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 30px;
+            padding: 8px;
+            position: absolute;
+            left: 45%;
+        
+        }
+        #input{
+            height: 50px;
+            width: 150px;
+            background-color: transparent;
+            border: 2px solid blue;
+            padding: 30px;
+            position: absolute;
+            left: 30%;
+            top: 35%;
+
+        }
+        #showContent{
+            height: 70px;
+            width: 300px;
+            padding: 10px;
+            font-size: 25px;
+            border: 1px solid blue;
+            position: absolute;
+            left: 60%;
+            top: 35%;
+        }
+        #check{
+            height: 40px;
+            width: 90px;
+            border: 1px solid blue;
+            background-color: white;
+            position: absolute;
+            left: 33%;
+            top: 50%;
+            border-radius: 20px;
+        }
+        #score{
+            position: absolute;
+            left: 65%;
+            top: 55%;
+            font-size: 30px;
+        }
+        #score1{
+            position: absolute;
+            left: 72%;
+            top: 55%;
+            font-size: 30px;
+        }
+        #highScore{
+            position: absolute;
+            left: 65%;
+            top: 63%;
+            font-size: 30px;
+        }
+        #highScore1{
+            position: absolute;
+            left: 77%;
+            top: 63%;
+            font-size: 30px;
+        }
+        .again{
+            height: 50px;
+            width: 100px;
+            border: 1px solid blue;
+            position: absolute;
+            left: 45%;
+            top: 70%;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2 id="h2">Guess my Number...!</h2>
+        <div id="guess">?</div>
+        <input id="input" type="number" min="0" max="20">
+        <p id="showContent">Start guessing...</p>
+        <button id="check">Check</button>
+        <p id="score">Score : <h5 id="score1"></h5> </p>
+        <p id="highScore">HighScore : <h5 id="highScore1">0</h5></p>
+        <button class="again">Play Again</button>
+        
+    </div>
+
+    <script src="./guessNumber.js"></script>
+</body>
+</html>
